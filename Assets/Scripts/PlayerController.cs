@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour 
 {
+
 	public float speed;
 
 	void FixedUpdate ()
@@ -13,5 +14,13 @@ public class PlayerController : MonoBehaviour
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		rigidbody.velocity = movement * speed;
 
+	}
+
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.tag == "PickUp") 
+		{
+			other.gameObject.SetActive (false);
+		}
 	}
 }
