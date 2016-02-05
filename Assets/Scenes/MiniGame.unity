@@ -1552,6 +1552,57 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1125182887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1125182888}
+  - 132: {fileID: 1125182889}
+  m_Layer: 0
+  m_Name: Time Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125182888
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125182887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .800000012, y: .899999976, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1514182851}
+  m_RootOrder: 2
+--- !u!132 &1125182889
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125182887}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Time Text
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1001 &1174260753
 Prefab:
   m_ObjectHideFlags: 0
@@ -1677,6 +1728,7 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 1976316962}
   winText: {fileID: 90505716}
+  timeText: {fileID: 1125182889}
 --- !u!54 &1388230573
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1872,6 +1924,7 @@ Transform:
   m_Children:
   - {fileID: 1976316963}
   - {fileID: 90505715}
+  - {fileID: 1125182888}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &1626268842
